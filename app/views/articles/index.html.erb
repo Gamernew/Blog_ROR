@@ -1,0 +1,6 @@
+<center><h1>Mon Super Blog En Ruby</h1></center>
+
+<% @articles.each do |article| %>
+  <h3><a href="/articles/<%= article.id %>"><%= article.title %></a></h3>
+<% end %>
+<center><%= paginate @articles %></center>
